@@ -32,12 +32,4 @@ done
 
 ~$ ls *.bam.bai | cut -d "-" -f1,2 > samples_names.txt
 ~$ cat samples_names.txt
-123325361-23150Z0031
-123337815-23151K0075
-123338821-23152K0010
-2104312-21140Z0019
-2205886-22173Z0051
-2205887-22173Z0053
-2205901-22173Z0095
-2205912-22173Z0063
 ~$ biometrics genotype  $(awk '{print "-i "$1}' samples_names.txt)     -db output --plot
